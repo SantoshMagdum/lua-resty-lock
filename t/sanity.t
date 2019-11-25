@@ -12,7 +12,7 @@ my $pwd = cwd();
 our $HttpConfig = qq{
     lua_package_path "../lua-resty-core/lib/?.lua;lib/?.lua;;";
     lua_package_cpath "/usr/local/openresty-debug/lualib/?.so;/usr/local/openresty/lualib/?.so;;";
-    lua_shared_dict cache_locks 100k;
+    lua_shared_dict cache_locks 200k;
 };
 
 $ENV{TEST_NGINX_RESOLVER} = '8.8.8.8';
